@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Menu</title>
+		<meta name="description" content="">
+		<meta name="author" content="Stifler">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="stylesheet" href="./css/nicemenu.css" type="text/css" />
+		<link rel="stylesheet" href="./css/sytle.css" type="text/css" />
+		<script src="./js/menu.js"></script>
+		<script>
+			function createMenu()
+			{
+				var targetDom = document.getElementById("targetMenu");
+				nm = new nice_menu(targetDom);
+				
+				nm.distributionType = 1;
+				nm.delay = 50;
+				nm.gap = 10;
+				nm.nm_ItemsData = [
+					["Menu1", "#", "_self", "./img/1.ico"],
+					["Menu2", "#", "_self", "./img/2.ico"],
+					["Menu3", "#", "_self", "./img/3.ico"],
+					["Menu4", "#", "_self", "./img/4.ico"],
+					["Menu5", "#", "_self", "./img/5.ico"],
+					/*
+					["Menu6", "#", "_self", "./img/6.ico"],
+					["Menu7", "#", "_self", "./img/7.ico"],
+					["Menu8", "#", "_self", "./img/8.ico"],
+					["Menu9", "#", "_self", "./img/9.ico"],
+					["Menu10", "#", "_self", "./img/ark.ico"]*/
+				];
+					
+				nm.nm_createMenu();
+			}
+			
+			function createMenu2()
+			{
+				var targetDom = document.getElementById("targetMenu");
+				nm = new nice_menu(targetDom);
+				
+				nm.initScale = 1.0;
+				nm.distributionType = 0;
+				nm.delay = 50;
+				nm.gap = 1;
+				nm.nm_ItemsData = [
+					["Menu1", "#", "_self", "./img/1.ico"],
+					["Menu2", "#", "_self", "./img/2.ico"],
+					["Menu3", "#", "_self", "./img/3.ico"],
+					["Menu4", "#", "_self", "./img/4.ico"],
+					["Menu5", "#", "_self", "./img/5.ico"],
+					["Menu6", "#", "_self", "./img/6.ico"],
+					["Menu7", "#", "_self", "./img/7.ico"],
+					["Menu8", "#", "_self", "./img/8.ico"],
+					["Menu9", "#", "_self", "./img/9.ico"],
+					["Menu10", "#", "_self", "./img/ark.ico"]
+				];
+					
+				nm.nm_createMenu();
+			}
+			
+			function test(){
+				var li1 = document.getElementById("nm_1");
+				li1.style = "transform: rotate(60deg) skew(50deg)  scale(1);";
+				li1.style.cssText  += "-webkit-transform: rotate(60deg) skew(50deg)  scale(1);";
+				li1.style.cssText  += "-ms-transform: rotate(60deg) skew(50deg)  scale(1);";
+				li1.style.cssText  += "-o-transform: rotate(60deg) skew(50deg)  scale(1);";
+			}
+		</script>
+	</head>
+
+	<body>
+		<div>
+			<div>
+				<div id="targetMenu" class="nicemenu" >
+					<a href="#" class="menuShowButton" onclick="showMenu"><div style="padding-top:  40%">Close</div></a>
+					<ul>
+						<li id="nm_1" style="" class="li1">
+							<a href="#" target="_self" class="nmA">
+								<div><img src="./img/ark.ico"  title="菜单1"/></div>
+							</a>
+						</li>
+						<li id="nm_2" style="" class="li2">
+							<a href="#" target="_self" class="nmA">
+								<div><img src="./img/ark.ico" title="菜单2"/></div>
+							</a>
+						</li>
+						<li id="nm_3" style="" class="li3">
+							<a href="#" target="_self" class="nmA">
+								<div><img src="./img/ark.ico" /></div>
+							</a>
+						</li>
+						<li id="nm_4" style="" class="li4">
+							<a href="#" target="_self" class="nmA">
+								<div><img src="./img/ark.ico" /></div>
+							</a>
+						</li>
+						<li id="nm_5" style="" class="li5">
+							<a href="#" target="_self" class="nmA">
+								<div><img src="./img/ark.ico" /></div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<button id="showMenu" class="MenuButton" onclick="createMenu()">显示菜单</button>
+				<button id="showMenu2" class="MenuButton" onclick="createMenu2()">显示菜单2</button>
+				<button id="test" class="MenuButton" onclick="test()">创建动画</button>
+			</div>
+		</div>
+	</body>
+</html>

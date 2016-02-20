@@ -1,0 +1,50 @@
+.MenuButton {
+	width: 120px;
+	height: 60px;
+}
+
+body{
+	background-color: #AAAAAA;
+}
+
+.nmA
+{
+	-o-transform: skew(-50deg) rotate(-67.5deg) scale(1);
+	-ms-transform: skew(-50deg) rotate(-67.5deg) scale(1);
+	-webkit-transform: skew(-50deg) rotate(-67.5deg) scale(1);
+	transform: skew(-50deg) rotate(-70deg) scale(1); 
+}
+
+.li1
+{
+	-o-transform: rotate(-10deg) skew(50deg)  scale(1);
+	-ms-transform: rotate(-10deg) skew(50deg)  scale(1); 
+	-webkit-transform: rotate(-10deg) skew(50deg)  scale(1); 
+	transform: rotate(-10deg) skew(50deg)  scale(1);
+}
+
+.li2
+{
+	-webkit-transform: rotate(30deg) skew(50deg)  scale(1); 
+	transform: rotate(30deg) skew(50deg)  scale(1);
+}
+
+.li3
+{
+	-webkit-transform: rotate(70deg) skew(50deg)  scale(1); 
+	transform: rotate(70deg) skew(50deg)  scale(1);
+}
+
+.li4
+{
+	-webkit-transform: rotate(110deg) skew(50deg)  scale(1); 
+	transform: rotate(110deg) skew(50deg)  scale(1);
+}
+
+
+.li5
+{
+	-webkit-transform: rotate(150deg) skew(50deg)  scale(1); 
+	transform: rotate(150deg) skew(50deg)  scale(1);
+}
+

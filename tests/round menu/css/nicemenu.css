@@ -1,0 +1,111 @@
+.nicemenu {
+	position: fixed;
+	width: 400px;
+	height: 400px;
+	z-index: 10;
+	bottom: 0px;
+	left: 50%;
+	margin-left:  -200px;
+	/*border: 1px solid #7C5089;*/
+}
+.menuShowButton{
+	display: inline-block;
+	position: relative;
+	left: 140px;
+	top: 150px;
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	padding: 0px 0px 0px 0px;;
+	text-align: center;
+	text-decoration: none;
+	font: bold 12px/25px Arial, sans-serif;
+	color: #3e5706;
+	background: #a5cd4e;
+	
+	text-shadow: 1px 1px 1px rgba(255,255,255, .22);
+
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+
+	-webkit-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+	-moz-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+	box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+
+	-webkit-transition: all 0.15s ease;
+	-moz-transition: all 0.15s ease;
+	-o-transition: all 0.15s ease;
+	-ms-transition: all 0.15s ease;
+	transition: all 0.15s ease;
+	z-index: 20;
+}
+
+.nicemenu li {
+	position: absolute;
+	font-size: 1.5em;
+	width: 10em;
+	height: 10em;
+	left: 50%; 
+	top: 0%; 
+	margin-top: -1.3em; 
+	margin-left: -10em; 
+	-o-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease
+	-o-transform-origin: 100% 100%;
+	-ms-transform-origin: 100% 100%;
+	-webkit-transform-origin: 100% 100%;
+	transform-origin: 100% 100%;
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+	color: #AAAAAA;
+	overflow:hidden;
+	/*background-color: #EEEEEE;
+	border: 1px solid #DDDDDD;*/
+}
+
+.nicemenu li a {
+  display: block;
+  font-size: 1.2em;
+  height: 13.5em;
+  width: 13.5em;
+  position: absolute;
+  bottom: -6.75em;
+  right: -6.75em;
+  text-decoration: none;
+  color: white;
+  -o-transition: background-color .3s ease, -o-transform .8s ease;
+  -ms-transition: background-color .3s ease, -ms-transform .8s ease;
+  -webkit-transition: background-color .3s ease, -webkit-transform .8s ease;
+  transition: background-color .3s ease, -webkit-transform .8s ease;
+  transition: background-color .3s ease, transform .8s ease;
+  background-color: #6B4078;
+  #padding-top: 2em; 
+  border-radius:50%;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.nicemenu li a:hover {
+  display: block;
+  font-size: 1.2em;
+  height: 13.5em;
+  width: 13.5em;
+  position: absolute;
+  bottom: -6.75em;
+  right: -6.75em;
+  text-decoration: none;
+  color: white;
+  -o-transition: background-color .3s ease, -o-transform .8s ease;
+  -ms-transition: background-color .3s ease, -ms-transform .8s ease;
+  -webkit-transition: background-color .3s ease, -webkit-transform .8s ease;
+  transition: background-color .3s ease, -webkit-transform .8s ease;
+  transition: background-color .3s ease, transform .8s ease;
+  background-color: #7C5089;
+  #padding-top: 2em; 
+  border-radius:50%;
+  text-align: center;
+  opacity: 1;
+}
