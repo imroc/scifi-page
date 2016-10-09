@@ -1,2 +1,2 @@
 # scifi-page
-see demo:http://cpwl.sinaapp.com
+see demo:https://imroc.github.io/
